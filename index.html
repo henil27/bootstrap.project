@@ -51,20 +51,42 @@
       color: black;
       border-radius: 10px;
     }
+
+    .Products {
+      background-color: antiquewhite;
+    }
+
+    .product-box {
+      transition: .7s;
+      overflow: hidden;
+    }
+
+    .product-box:hover {
+      box-shadow: 0 0 20px black;
+    }
+
+    .img-item {
+      transition: .7s;
+    }
+
+    .product-box:hover .img-item {
+      transform: scale(1.1);
+    }
   </style>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100  " style="height: 60px;">
+  <!--HOME SECTION-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100  z-1 " style="height: 60px;">
     <div class="container-fluid  " style=" margin:0; padding: 0;">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3 ">
           <li class="nav-item">
-            <a class="pages nav-link active" href="#">Home</a>
+            <a class="pages nav-link active" href="#Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="pages nav-link" href="#">Product</a>
+            <a class="pages nav-link" href="#Product">Product</a>
           </li>
           <li class="nav-item">
             <a class="pages nav-link" href="#">Explore </a>
@@ -83,7 +105,7 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluid Home">
+  <div class="container-fluid Home" id="Home">
     <div class="row text-center ">
       <div class="col flex-column description-box text-white  ">
         <p class="h4">Black Friday Is July</p>
@@ -93,11 +115,55 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <!--PRODUCT SECTION-->
+  <div class="container-fluid bg-light-subtle  m-0 p-0  " style="height: 100vh;" id="Product">
+    <div class="row-cols-auto Products " style="height: 15%; width: 100%;">
+      <p class="fs-6 text-center">Shop By Category</p>
+      <h2 class="h1 text-center mb-0 ">Shop By Category</h2>
+    </div>
+    <div class="row Products justify-content-evenly " style="height: 85%;width: 100%;">
+      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+        <img
+          src="https://img.freepik.com/free-psd/armchair-pillow_176382-886.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=ais"
+          class="card-img-top h-50 img-item" alt="...">
+        <div class="card-body m-0 ">
+          <h5 class="card-title">SOFA CHAIR</h5>
+          <p class="card-text">$150.00</p>
+          <a href="#" class="btn btn-secondary">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+        <img
+          src="https://img.freepik.com/free-psd/modern-bedroom-interior-isolated_176382-702.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=sph"
+          class="card-img-top h-50 img-item" alt="...">
+        <div class="card-body  ">
+          <h5 class="card-title">BED</h5>
+          <p class="card-text">$150.00</p>
+          <a href="#" class="btn btn-secondary">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+        <img
+          src="https://img.freepik.com/free-vector/realistic-modern-stylish-golden-white-standard-lamp-vector-illustration_1284-66950.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=sph"
+          class="card-img-top h-50 img-item" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NIGHT LAMP</h5>
+          <p class="card-text">$150.00</p>
+          <a href="#" class="btn btn-secondary">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+        <img
+          src="https://img.freepik.com/free-photo/vintage-furniture_74190-344.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=ais"
+          class="card-img-top h-50 img-item" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TABLE</h5>
+          <p class="card-text">$150.00</p>
+          <a href="#" class="btn btn-secondary">BUY NOW</a>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
-  integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
