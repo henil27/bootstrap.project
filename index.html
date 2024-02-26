@@ -17,7 +17,6 @@
       background-image: url(https://ofisu.co.th/wp-content/uploads/2021/01/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background-scaled.jpg);
       background-size: cover;
       background-position: center;
-
     }
 
     .description-box {
@@ -72,15 +71,46 @@
     .product-box:hover .img-item {
       transform: scale(1.1);
     }
-  </style>
 
+    .heading {
+      background-color: rgba(173, 216, 230, 0.24);
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .text {
+      letter-spacing: 8px;
+    }
+
+    .h300 {
+      height: 300px;
+    }
+
+    .icon {
+      font-size: 70px;
+    }
+
+    .description {
+      font-size: 25px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: normal;
+    }
+
+    .col-2 {
+      transition: .2s;
+    }
+
+    .col-2:hover {
+      background-color: lightgray;
+    }
+  </style>
 </head>
 
 <body>
   <!--HOME SECTION-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100  z-1 " style="height: 60px;">
-    <div class="container-fluid  " style=" margin:0; padding: 0;">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="container-fluid" style=" margin:0; padding: 0;">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3 ">
           <li class="nav-item">
             <a class="pages nav-link active" href="#Home">Home</a>
@@ -89,10 +119,10 @@
             <a class="pages nav-link" href="#Product">Product</a>
           </li>
           <li class="nav-item">
-            <a class="pages nav-link" href="#">Explore </a>
+            <a class="pages nav-link" href="#Explore">Explore</a>
           </li>
           <li class="nav-item">
-            <a class="pages nav-link" href="#">Information </a>
+            <a class="pages nav-link" href="#">Information</a>
           </li>
         </ul>
         <a class="navbar-brand me-auto h1  " href="#" style="font-size: 32px;">Furniture</a>
@@ -105,62 +135,108 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluid Home" id="Home">
+  <div class="container-fluid Home " id="Home">
     <div class="row text-center ">
       <div class="col flex-column description-box text-white  ">
         <p class="h4">Black Friday Is July</p>
         <h2 class="h1">UP TO 50% OFF</h2>
-        <p class="text-white-50 ">Hundreds Of Style Available </p>
+        <p class="text-white-50 ">Hundreds Of Style Available</p>
         <button class="btn btn-primary   border border-1   text-white rounded-pill ">SHOP NOW</button>
       </div>
     </div>
   </div>
   <!--PRODUCT SECTION-->
-  <div class="container-fluid bg-light-subtle  m-0 p-0  " style="height: 100vh;" id="Product">
+  <div class="container-fluid bg-light-subtle " style="margin: 0%;padding: 0%;" id="Product">
     <div class="row-cols-auto Products " style="height: 15%; width: 100%;">
       <p class="fs-6 text-center">Shop By Category</p>
       <h2 class="h1 text-center mb-0 ">Shop By Category</h2>
     </div>
-    <div class="row Products justify-content-evenly " style="height: 85%;width: 100%;">
-      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+    <div class="row Products justify-content-evenly" style="height: 85%;width: 100%;margin: 0%;padding: 0%;">
+      <div class="card m-4 p-0  product-box border-1 border-black " style="height: 400px; width: 320px;">
         <img
           src="https://img.freepik.com/free-psd/armchair-pillow_176382-886.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=ais"
           class="card-img-top h-50 img-item" alt="...">
         <div class="card-body m-0 ">
           <h5 class="card-title">SOFA CHAIR</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p class="card-text">$150.00</p>
           <a href="#" class="btn btn-secondary">BUY NOW</a>
         </div>
       </div>
-      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+      <div class="card m-4 p-0  product-box border-1 border-black " style="height: 400px; width: 320px;">
         <img
           src="https://img.freepik.com/free-psd/modern-bedroom-interior-isolated_176382-702.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=sph"
           class="card-img-top h-50 img-item" alt="...">
         <div class="card-body  ">
           <h5 class="card-title">BED</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p class="card-text">$150.00</p>
           <a href="#" class="btn btn-secondary">BUY NOW</a>
         </div>
       </div>
-      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+      <div class="card m-4 p-0  product-box border-1 border-black " style="height: 400px; width: 320px;">
         <img
           src="https://img.freepik.com/free-vector/realistic-modern-stylish-golden-white-standard-lamp-vector-illustration_1284-66950.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=sph"
           class="card-img-top h-50 img-item" alt="...">
         <div class="card-body">
           <h5 class="card-title">NIGHT LAMP</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p class="card-text">$150.00</p>
           <a href="#" class="btn btn-secondary">BUY NOW</a>
         </div>
       </div>
-      <div class="card m-4 p-0  product-box" style="height: 400px; width: 320px;">
+      <div class="card m-4 p-0  product-box border-1 border-black " style="height: 400px; width: 320px;">
         <img
           src="https://img.freepik.com/free-photo/vintage-furniture_74190-344.jpg?size=626&ext=jpg&ga=GA1.1.570945863.1704460564&semt=ais"
           class="card-img-top h-50 img-item" alt="...">
         <div class="card-body">
           <h5 class="card-title">TABLE</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p class="card-text">$150.00</p>
           <a href="#" class="btn btn-secondary">BUY NOW</a>
         </div>
+      </div>
+    </div>
+  </div>
+  <!--EXPLORE SECTION-->
+  <div class="container-fluid bg-secondary-subtle  m-0 p-0  " style="height: 93vh;" id="Explore">
+    <div class=" row-cols-auto  heading row-cols-sm-1 " style="height: 75px;width: 100%;">
+      <h2 class="h2 text-center mt-3 fw-bold text">Explore Collection</h2>
+    </div>
+    <div class="row justify-content-evenly pt-3 ">
+      <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-couch icon"></i>
+        <p class="description">Sofa</p>
+      </div>
+      <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-table icon"></i>
+        <p class="description">Table</p>
+      </div>
+      <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-bed icon"></i>
+        <p class="description">Bed</p>
+      </div>
+      <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-lightbulb icon"></i>
+        <p class="description">Lamp</p>
+      </div>
+    </div>
+    <div class="row justify-content-evenly pt-3 ">
+      <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-utensils icon"></i>
+        <p class="description">Dining Table</p>
+      </div>
+      <div class="col-2 h300 m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-brands fa-windows icon"></i>
+        <p class="description">Mirrors</p>
+      </div>
+      <div class="col-2 h300 m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-chair icon"></i>
+        <p class="description"> Chairs</p>
+      </div>
+      <div class="col-2 h300 m-2 justify-content-center align-items-center d-flex flex-column ">
+        <i class="fa-solid fa-door-open icon"></i>
+        <p class="description">Doors</p>
       </div>
     </div>
   </div>
