@@ -103,6 +103,23 @@
     .col-2:hover {
       background-color: lightgray;
     }
+
+    .background-color {
+      background-color: #F4ECE2;
+    }
+
+    .fonts {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* .service-box {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      padding: 12px;
+    } */
   </style>
 </head>
 
@@ -122,7 +139,7 @@
             <a class="pages nav-link" href="#Explore">Explore</a>
           </li>
           <li class="nav-item">
-            <a class="pages nav-link" href="#">Information</a>
+            <a class="pages nav-link" href="#information">Information</a>
           </li>
         </ul>
         <a class="navbar-brand me-auto h1  " href="#" style="font-size: 32px;">Furniture</a>
@@ -199,11 +216,11 @@
     </div>
   </div>
   <!--EXPLORE SECTION-->
-  <div class="container-fluid bg-secondary-subtle  m-0 p-0  " style="height: 93vh;" id="Explore">
-    <div class=" row-cols-auto  heading row-cols-sm-1 " style="height: 75px;width: 100%;">
+  <div class="container-fluid bg-white-subtle  m-0 p-0  " style="height: 100vh;" id="Explore">
+    <div class=" row-cols-auto  heading row-cols-sm-1" style="height: 75px;width: 100%;;">
       <h2 class="h2 text-center mt-3 fw-bold text">Explore Collection</h2>
     </div>
-    <div class="row justify-content-evenly pt-3 ">
+    <div class="row justify-content-evenly pt-3 m-3  ">
       <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
         <i class="fa-solid fa-couch icon"></i>
         <p class="description">Sofa</p>
@@ -221,7 +238,7 @@
         <p class="description">Lamp</p>
       </div>
     </div>
-    <div class="row justify-content-evenly pt-3 ">
+    <div class="row justify-content-evenly pt-3 m-3 ">
       <div class="col-2 h300  m-2 justify-content-center align-items-center d-flex flex-column ">
         <i class="fa-solid fa-utensils icon"></i>
         <p class="description">Dining Table</p>
@@ -237,6 +254,65 @@
       <div class="col-2 h300 m-2 justify-content-center align-items-center d-flex flex-column ">
         <i class="fa-solid fa-door-open icon"></i>
         <p class="description">Doors</p>
+      </div>
+    </div>
+  </div>
+  <!--WHY CHOOSE US-->
+  <div class="container-fluid background-color  m-0  p-0 " style="height: 100vh;" id="information">
+    <p class=" fs-5 text-center fonts" style="padding-top: 65px;">Best Products</p>
+    <h2 class="display-6  text-center fonts"> Why Choose Us?</h2>
+    <div class="row">
+      <div
+        class="col  flex-column border border-1 border-secondary-subtle  justify-content-center align-items-center  d-flex m-3"
+        style="height: 300px;">
+        <i class="fa-solid fa-truck-fast fs-3 mb-1 "></i>
+        <h3 class="fs-3 text-center ">Fast Delivery</h3>
+        <p class="fs-6  text-center mt-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, saepe!</p>
+      </div>
+      <div
+        class="col  flex-column border border-1 border-secondary-subtle justify-content-center align-items-center  d-flex m-3  ">
+        <i class="fa-regular fa-credit-card fs-3 mb-1"></i>
+        <h3 class="fs-3 text-center">Free Shipping</h3>
+        <p class="fs-6  text-center mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, unde.</p>
+      </div>
+      <div
+        class="col  flex-column border border-1 border-secondary-subtle justify-content-center align-items-center  d-flex m-3  ">
+        <i class="fa-solid fa-shield-halved fs-3 mb-1"></i>
+        <h3 class="fs-3 text-center">Secure Checkout</h3>
+        <p class="fs-6  text-center mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, atque!</p>
+      </div>
+      <div
+        class="col  flex-column border border-1 border-secondary-subtle justify-content-center align-items-center  d-flex m-3  ">
+        <i class="fa-solid fa-cart-arrow-down fs-3 mb-1"></i>
+        <h3 class="fs-3 text-center">Easy Returns</h3>
+        <p class="fs-6  text-center mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, totam!</p>
+      </div>
+    </div>
+    <div class="row bg-secondary-subtle " style="height: 360px;">
+      <div class="col-6 ">
+        <h3>FURNITURE</h3>
+        <span>Shop</span>
+      </div>
+      <div class="col flex-column d-flex ">
+        <h4>Links</h4>
+        <a class="text-decoration-none text-dark" href="#">Story</a>
+        <a class="text-decoration-none text-dark"href="#">Contact</a>
+        <a class="text-decoration-none text-dark"href="#">Track Order</a>
+        <a class="text-decoration-none text-dark"href="#">Help</a>
+      </div>
+      <div class="col flex-column d-flex ">
+        <h4>Categories</h4>
+        <a class="text-decoration-none text-dark"href="#">Bedroom(9)</a>
+        <a class="text-decoration-none text-dark"href="#">Decor(11)</a>
+        <a class="text-decoration-none text-dark"href="#">Living Room(5)</a>
+        <a class="text-decoration-none text-dark"href="#">Office(6)</a>
+      </div>
+      <div class="col flex-column d-flex ">
+        <h4>Subscribe</h4>
+        <a class="text-decoration-none text-dark"href="#">Story</a>
+        <a class="text-decoration-none text-dark"href="#">Contact</a>
+        <a class="text-decoration-none text-dark"href="#">Track Order</a>
+        <a class="text-decoration-none text-dark"href="#">Help</a>
       </div>
     </div>
   </div>
